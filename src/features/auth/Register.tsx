@@ -33,7 +33,7 @@ export default function RegisterPage() {
         try {
             // Kita tidak perlu getCSRFToken() untuk API Sanctum
             // Langsung panggil API registrasi
-            await axios.post('http://127.0.0.1:8000/api/registration', form);
+            await axios.post('https://siku-ten.vercel.app/api/registration', form);
             
             // Beri notifikasi sukses dan arahkan ke halaman login
             alert('Registrasi berhasil! Anda akan diarahkan ke halaman login untuk masuk.');

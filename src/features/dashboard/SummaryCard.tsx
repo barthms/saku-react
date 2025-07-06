@@ -26,7 +26,7 @@ export const SummaryCard = () => {
             const monthParam = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}`;
             
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/dashboard/summary', {
+                const response = await axios.get('https://siku-ten.vercel.app/api/dashboard/summary', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: { month: monthParam }
                 });

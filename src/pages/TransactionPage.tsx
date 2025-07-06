@@ -39,7 +39,7 @@ export function TransactionsPage() {
             setIsLoading(true);
             const token = localStorage.getItem('token');
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/transaction', {
+                const response = await axios.get('https://siku-ten.vercel.app/api/transaction', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: {
                         page: paginationInfo.currentPage,
@@ -72,7 +72,7 @@ export function TransactionsPage() {
         if (window.confirm("Apakah Anda yakin ingin menghapus transaksi ini?")) {
             const token = localStorage.getItem('token');
             try {
-                await axios.delete(`http://127.0.0.1:8000/api/transaction/${id}`, {
+                await axios.delete(`https://siku-ten.vercel.app/api/transaction/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 alert("Transaksi berhasil dihapus.");

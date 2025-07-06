@@ -24,7 +24,7 @@ const CategoriesPage: React.FC = () => {
 
             try {
                 // Lakukan request ke API Laravel
-                const response = await axios.get('http://127.0.0.1:8000/api/categories', {
+                const response = await axios.get('https://siku-ten.vercel.app/api/categories', {
                     headers: {
                         Authorization: `Bearer ${token}` // Sertakan token
                     }
