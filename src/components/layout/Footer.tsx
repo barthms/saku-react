@@ -28,7 +28,7 @@ export const Footer = () => {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                 {/* Bagian Kiri: Copyright & Nama Anda */}
                 <div className="text-gray-500 text-center sm:text-left">
-                    <span>© {currentYear} SAKU. All Rights Reserved.</span>
+                    <span>© {currentYear} SIKU. All Rights Reserved.</span>
                     <span className="hidden sm:inline"> | </span>
                     <br className="sm:hidden" />
                     <span>Dibuat dengan oleh <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-green-600 hover:underline">{yourName}</a></span>

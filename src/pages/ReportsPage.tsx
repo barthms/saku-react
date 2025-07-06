@@ -36,7 +36,7 @@ export function ReportsPage() {
             const url = window.URL.createObjectURL(new Blob([response.data]));
             const link = document.createElement('a');
             const contentDisposition = response.headers['content-disposition'];
-            let fileName = `Laporan_SAKU.csv`;
+            let fileName = `Laporan_SIKU.csv`;
             if (contentDisposition) {
                 const fileNameMatch = contentDisposition.match(/filename="(.+)"/);
                 if (fileNameMatch.length === 2) fileName = fileNameMatch[1];

@@ -37,7 +37,7 @@ export default function LoginPage() {
             <div className="mb-8 text-center">
                 <Link to="/home" className="flex items-center justify-center gap-2 hover:text-green-600 transition-colors duration-300">
                     <FiHome className="text-3xl" />
-                    <h1 className="text-4xl font-bold text-gray-800">SAKU</h1>
+                    <h1 className="text-4xl font-bold text-gray-800">SIKU</h1>
                 </Link>
                 <p className="text-gray-500 mt-2">Selamat datang kembali! Silakan login untuk melanjutkan.</p>
             </div>
