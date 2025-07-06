@@ -1,6 +1,4 @@
-// src/features/dashboard/SummaryCard.tsx
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { Card } from '../../components/ui/Card';

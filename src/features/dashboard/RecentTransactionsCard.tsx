@@ -1,5 +1,4 @@
-// src/features/dashboard/RecentTransactionsCard.tsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Card } from '../../components/ui/Card';
 import { TransactionItem, type Transaction } from './TransactionItem';

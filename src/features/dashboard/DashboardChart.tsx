@@ -1,5 +1,4 @@
-// src/features/dashboard/DashboardChart.tsx
-import React, { useState, useEffect } from 'react';
+import{ useState, useEffect } from 'react';
 import axios from 'axios';
 import { ChartCard } from './ChartCard';
 import { useDashboard } from '../../context/DashboardContext';
