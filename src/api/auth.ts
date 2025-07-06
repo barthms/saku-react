@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://siku-ten.vercel.app//api',
+    baseURL: 'https://siku-ten.vercel.app/api',
 });
 
 export const loginAPI = async (email: string, password: string) => {
