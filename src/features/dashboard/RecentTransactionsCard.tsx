@@ -16,7 +16,7 @@ export const RecentTransactionsCard = () => {
             if (!token) return;
 
             try {
-                const response = await axios.get('https://siku-ten.vercel.app/api/dashboard/recent-transactions', {
+                const response = await axios.get('https://saku-production.up.railway.app/api/dashboard/recent-transactions', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setTransactions(response.data);

@@ -32,7 +32,7 @@ export const TransactionForm = ({ onClose, transactionToEdit }: TransactionFormP
         const fetchCategories = async () => {
             const token = localStorage.getItem('token');
             try {
-                const response = await axios.get('https://siku-ten.vercel.app/api/categories', { headers: { Authorization: `Bearer ${token}` } });
+                const response = await axios.get('https://saku-production.up.railway.app/api/categories', { headers: { Authorization: `Bearer ${token}` } });
                 setAllCategories(response.data);
             } catch (err) {
                 console.error("Gagal mengambil kategori:", err);
@@ -48,7 +48,7 @@ export const TransactionForm = ({ onClose, transactionToEdit }: TransactionFormP
         if (newCategoryName && newCategoryName.trim() !== '') {
             const token = localStorage.getItem('token');
             try {
-                const response = await axios.post('https://siku-ten.vercel.app/api/categories', 
+                const response = await axios.post('https://saku-production.up.railway.app/api/categories', 
                     { name: newCategoryName, type: transactionType },
                     { headers: { Authorization: `Bearer ${token}` } }
                 );
@@ -76,8 +76,8 @@ export const TransactionForm = ({ onClose, transactionToEdit }: TransactionFormP
         };
 
         const url = isEditMode 
-            ? `https://siku-ten.vercel.app/api/transaction/${transactionToEdit.id}` 
-            : 'https://siku-ten.vercel.app/api/transaction';
+            ? `https://saku-production.up.railway.app/api/transaction/${transactionToEdit.id}` 
+            : 'https://saku-production.up.railway.app/api/transaction';
         
         const method = isEditMode ? 'put' : 'post';
 

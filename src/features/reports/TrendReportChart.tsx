@@ -21,7 +21,7 @@ export const TrendReportCard = ({ period }: { period: Period }) => {
             if (!token) return;
 
             try {
-                const response = await axios.get('https://siku-ten.vercel.app/api/reports/income-vs-expense-trend', {
+                const response = await axios.get('https://saku-production.up.railway.app/api/reports/income-vs-expense-trend', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: period
                 });

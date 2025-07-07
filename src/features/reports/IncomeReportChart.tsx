@@ -25,7 +25,7 @@ export const IncomeReportCard = ({ period }: { period: Period }) => {
 
             try {
                 // Panggil endpoint API untuk data pemasukan
-                const response = await axios.get('https://siku-ten.vercel.app/api/reports/income-by-category', {
+                const response = await axios.get('https://saku-production.up.railway.app/api/reports/income-by-category', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: period
                 });

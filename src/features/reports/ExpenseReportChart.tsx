@@ -24,7 +24,7 @@ export const ExpenseReportCard = ({ period }: { period: Period }) => {
             if (!token) return;
 
             try {
-                const response = await axios.get('https://siku-ten.vercel.app/api/reports/expense-by-category', {
+                const response = await axios.get('https://saku-production.up.railway.app/api/reports/expense-by-category', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: period
                 });

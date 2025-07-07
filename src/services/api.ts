@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://siku-ten.vercel.app/api", // tanpa /api karena Sanctum CSRF cookie berasal dari root
+    baseURL: "https://saku-production.up.railway.app/api", // tanpa /api karena Sanctum CSRF cookie berasal dari root
     withCredentials: true, // ini WAJIB
 });
 

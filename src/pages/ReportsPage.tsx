@@ -27,7 +27,7 @@ export function ReportsPage() {
         setIsExporting(true);
         const token = localStorage.getItem('token');
         try {
-            const response = await axios.get('https://siku-ten.vercel.app/api/reports/export-transactions', {
+            const response = await axios.get('https://saku-production.up.railway.app/api/reports/export-transactions', {
                 headers: { Authorization: `Bearer ${token}` },
                 params: period,
                 responseType: 'blob',
