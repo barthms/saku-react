@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { registerAPI } from '../api/auth';
 import { Card } from '../components/ui/Card';
-import { FiUserPlus } from 'react-icons/fi';
+import { FiUserPlus, FiHome } from 'react-icons/fi';
 
 export default function RegisterPage() {
     const navigate = useNavigate();
@@ -41,7 +41,10 @@ export default function RegisterPage() {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center p-4">
             <div className="mb-8 text-center">
-                <h1 className="text-4xl font-bold text-gray-800">SAKU</h1>
+                <Link to="/home" className="flex items-center justify-center gap-2 hover:text-green-600 transition-colors duration-300">
+                    <FiHome className="text-3xl" />
+                    <h1 className="text-4xl font-bold text-gray-800">SAKU</h1>
+                </Link>
                 <p className="text-gray-500 mt-2">Buat akun baru untuk mulai perjalanan finansial Anda.</p>
             </div>
             <Card className="w-full max-w-md">
@@ -65,12 +68,12 @@ export default function RegisterPage() {
                         <label htmlFor="password_confirmation" >Konfirmasi Password</label>
                         <input id="password_confirmation" type="password" value={passwordConfirmation} onChange={(e) => setPasswordConfirmation(e.target.value)} required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-green-500 focus:border-green-500" />
                     </div>
-                    
+
                     {errors.general && <p className="text-red-500 text-sm text-center">{errors.general[0]}</p>}
 
                     <div className="pt-2">
                         <button type="submit" disabled={isLoading} className="w-full flex justify-center items-center gap-2 bg-green-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-green-700 disabled:opacity-50 transition-all duration-300">
-                           {isLoading ? 'Mendaftar...' : <> <FiUserPlus /> Buat Akun </>}
+                            {isLoading ? 'Mendaftar...' : <> <FiUserPlus /> Buat Akun </>}
                         </button>
                     </div>
                 </form>
