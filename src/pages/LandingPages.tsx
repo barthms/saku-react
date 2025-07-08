@@ -83,7 +83,7 @@ export function LandingPage() {
                             <h2 className="text-3xl font-bold">Dari Angka Menjadi Wawasan</h2>
                             <p className="text-gray-500 mt-2">SAKU mengubah catatan transaksi Anda menjadi cerita visual yang bermakna.</p>
                         </div>
-                        <img src={dashboardMockup} alt="SIPU Dashboard Mockup" className="rounded-xl shadow-2xl mx-auto" />
+                        <img src={dashboardMockup} alt="SAKU Dashboard Mockup" className="rounded-xl shadow-2xl mx-auto" />
                     </div>
                 </section>
 
