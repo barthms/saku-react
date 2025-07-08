@@ -20,8 +20,8 @@ export function Sidebar() {
         <aside className="h-screen bg-white p-6 flex flex-col justify-between border-r border-gray-200">
             <div>
                 <div className="mb-12">
-                    <h1 className="text-3xl font-bold text-gray-800">SIKU</h1>
-                    <p className="text-sm text-gray-500">Sistem Pencatatan Keuanganku</p>
+                    <h1 className="text-3xl font-bold text-gray-800">SAKU</h1>
+                    <p className="text-sm text-gray-500">Solusi Aplikasi Keuanganmu</p>
                 </div>
 
                 <nav className="flex flex-col space-y-2">

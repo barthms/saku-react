@@ -56,7 +56,7 @@ export default function RegisterPage() {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center p-4">
             <div className="mb-8 text-center">
-                <h1 className="text-4xl font-bold text-gray-800">SIKU</h1>
+                <h1 className="text-4xl font-bold text-gray-800">SAKU</h1>
                 <p className="text-gray-500 mt-2">Buat akun baru untuk mulai perjalanan finansial Anda.</p>
             </div>
             

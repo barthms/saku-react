@@ -6,7 +6,7 @@ import { FiArrowRight, FiEdit, FiBarChart2, FiShare2 } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Footer } from '../components/layout/Footer';
 // Ganti dengan path gambar mockup Anda
-import dashboardMockup from '../assets/SIPU.png'; // Pastikan nama file mockup sesuai
+import dashboardMockup from '../assets/pixlr-image-generator-686ce86fe8f2d41b55745837.png'; // Pastikan nama file mockup sesuai
 import yourPhoto from '../assets/muka perpus.jpg'; // Siapkan foto Anda
 
 // Komponen kecil untuk kartu fitur
@@ -30,7 +30,7 @@ export function LandingPage() {
         <div className="bg-gray-50 text-gray-800 font-sans">
             {/* 1. Header & Navigasi */}
             <header className="container mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 className="text-2xl font-bold">SIKU</h1>
+                <h1 className="text-2xl font-bold">SAKU</h1>
                 <div className="space-x-4">
                     <Link to="/login" className="text-gray-600 font-semibold hover:text-green-600">Login</Link>
                     <Link to="/register" className="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors shadow-sm hover:shadow-md">
@@ -46,7 +46,7 @@ export function LandingPage() {
                         Pencatatan Keuangan, <br className="hidden md:block" /> Kini Lebih <span className="text-green-600">Sederhana</span>.
                     </h1>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
-                        SIKU membantu Anda memahami ke mana perginya uang Anda. Catat setiap transaksi dengan mudah dan lihat ringkasan visual untuk mengambil keputusan finansial yang lebih baik.
+                        SAKU membantu Anda memahami ke mana perginya uang Anda. Catat setiap transaksi dengan mudah dan lihat ringkasan visual untuk mengambil keputusan finansial yang lebih baik.
                     </p>
                     <div className="mt-8">
                         <Link to="/register" className="inline-flex items-center gap-2 bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition-transform hover:scale-105">
@@ -81,7 +81,7 @@ export function LandingPage() {
                     <div className="container mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-bold">Dari Angka Menjadi Wawasan</h2>
-                            <p className="text-gray-500 mt-2">SIKU mengubah catatan transaksi Anda menjadi cerita visual yang bermakna.</p>
+                            <p className="text-gray-500 mt-2">SAKU mengubah catatan transaksi Anda menjadi cerita visual yang bermakna.</p>
                         </div>
                         <img src={dashboardMockup} alt="SIPU Dashboard Mockup" className="rounded-xl shadow-2xl mx-auto" />
                     </div>
@@ -94,7 +94,7 @@ export function LandingPage() {
                         <h3 className="text-2xl font-bold">Proyek Portofolio oleh {yourName}</h3>
                         <p className="text-green-600 font-semibold mt-1">Full-Stack Web Developer</p>
                         <p className="max-w-2xl mx-auto text-gray-600 mt-4">
-                            Proyek SIKU ini dibangun untuk menunjukkan kemampuan dalam merancang dan mengembangkan aplikasi web dari hulu ke hilir. Tujuannya adalah menciptakan alat yang fungsional, bermanfaat, dan memiliki pengalaman pengguna yang baik.
+                            Proyek SAKU ini dibangun untuk menunjukkan kemampuan dalam merancang dan mengembangkan aplikasi web dari hulu ke hilir. Tujuannya adalah menciptakan alat yang fungsional, bermanfaat, dan memiliki pengalaman pengguna yang baik.
                         </p>
                         <div className="mt-6">
                             <h4 className="font-semibold mb-3">Teknologi yang Digunakan:</h4>
@@ -119,7 +119,7 @@ export function LandingPage() {
                     <p className="text-gray-500 mt-2">Gratis, cepat, dan aman. Buat akun Anda sekarang.</p>
                     <div className="mt-8">
                         <Link to="/register" className="inline-flex items-center gap-2 bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition-transform hover:scale-105">
-                            Daftar SIKU Gratis
+                            Daftar SAKU Gratis
                         </Link>
                     </div>
                 </section>
@@ -128,7 +128,7 @@ export function LandingPage() {
              {/* 7. Footer */}
              <footer className="bg-white border-t">
                 {/* <div className="container mx-auto px-6 py-6 text-center text-gray-500 text-sm">
-                    © {new Date().getFullYear()} SIKU. Sebuah Proyek Portofolio oleh {yourName}.
+                    © {new Date().getFullYear()} SAKU. Sebuah Proyek Portofolio oleh {yourName}.
                 </div> */}
                 <Footer />
              </footer>
